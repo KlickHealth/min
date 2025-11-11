@@ -69,12 +69,18 @@ body[class='728x90'] br[class]:not([class='728x90']) {
   overflow: hidden;
 }
 
-.isiScroll div { cursor: default; }
-.isiScroll:not(.bnfy-enter) { max-height: 100%; }
-
 .isiScroll {
+  height: 100%;
   overflow-x: hidden;
   background-color: var(--isi-bg-color, #fff);
+}
+
+.isiScroll div {
+	cursor: default;
+}
+
+.isiScroll:not(.bnfy-enter) {
+	max-height: 100%;
 }
 
 #html {
