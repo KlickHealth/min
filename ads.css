@@ -5,9 +5,9 @@
 }
 
 img {
-  max-width: 100%;
   border: 0;
   vertical-align: top;
+  max-width: var(--body-width, 100%);
 }
 
 body[class='160x600'] .banner {
