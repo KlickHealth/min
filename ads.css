@@ -66,6 +66,7 @@ body[class='728x90'] br[class]:not([class='728x90']) {
 
 #main_link div {
   position: absolute;
+  overflow: hidden;
 }
 
 .isiScroll div { cursor: default; }
