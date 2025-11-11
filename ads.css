@@ -1,0 +1,87 @@
+.isiScroll, div {
+  cursor: pointer;
+}
+
+.isiScroll div {
+  cursor: default;
+}
+
+.isiScroll:not(.bnfy-enter) {
+  max-height: 100%;
+}
+
+.isiScroll {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-transform: initial;
+  background-color: #ffffff;
+}
+
+.isiScroll * {
+  box-sizing: border-box;
+}
+
+.isiScroll > *:not(b) {
+  padding: 0 !important;
+}
+
+#html {
+  display: block;
+  max-height: 100%;
+  overflow-x: hidden;
+  word-break: break-word;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#html::-webkit-scrollbar {
+  display: none;
+}
+
+.isiScroll>a {
+  display: block;
+  padding: 6px 0;
+}
+
+.isiScroll > b:first-child, .isiScroll > b:first-child b {
+  display: block;
+  min-width: 6px;
+  min-height: 7px;
+  border-radius: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.isiScroll > b:first-child {
+  top: 15px;
+  bottom: 15px;
+  right: 0px;
+  min-width: 6px;
+  border: 1px solid #c3dcd7;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.isiScroll > b:first-child b {
+  cursor: pointer;
+  min-width: 4px;
+}
+
+.isiScroll > b:first-child i {
+  display: block;
+  position: absolute;
+  border-width: 6px;
+  border-style: solid;
+  border-image: initial;
+  margin: -15px -3px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.isiScroll > b:first-child i + i {
+  bottom: 0;
+}
