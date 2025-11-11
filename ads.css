@@ -30,12 +30,17 @@ body[class='728x90'] .banner {
   width: 728px;
   height: 90px;
 }
+body[class='320x50'] .banner {
+  width: 320px;
+  height: 50px;
+}
 
 body[class='160x600'] br[class]:not([class='160x600']),
 body[class='300x250'] br[class]:not([class='300x250']),
 body[class='300x600'] br[class]:not([class='300x600']),
 body[class='970x250'] br[class]:not([class='970x250']),
-body[class='728x90'] br[class]:not([class='728x90']) {
+body[class='728x90'] br[class]:not([class='728x90']),
+body[class='320x50'] br[class]:not([class='320x50']), {
   display: none;
 }
 
