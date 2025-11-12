@@ -111,7 +111,7 @@ body[class='320x50'] br[class]:not([class='320x50']), {
   min-height: 6px;
   position: absolute;
   z-index: 1;
-  background: #efefef;
+  background: lightgray;
 }
 
 .isiScroll > b:first-child {
@@ -128,7 +128,7 @@ body[class='320x50'] br[class]:not([class='320x50']), {
 
 .isiScroll > b:first-child b {
   cursor: pointer;
-  background: #808080;
+  background: gray;
 }
 
 .isiScroll > b:first-child i {
@@ -140,10 +140,10 @@ body[class='320x50'] br[class]:not([class='320x50']), {
 }
 
 .isiScroll > b:first-child i:first-of-type {
-  border-bottom-color: #808080;
+  border-bottom-color: gray;
 }
 
 .isiScroll > b:first-child i + i {
   bottom: 0;
-  border-top-color: #808080;
+  border-top-color: gray;
 }
