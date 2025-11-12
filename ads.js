@@ -18,9 +18,6 @@ const Scroll = ({
   event = 'animationEnd webkitAnimationEnd mozAnimationEnd',
   on,
   slider = 8,
-  color = '#EFEFEF',
-  track = '#808080',
-  curve = '50px',
   arrow,
   delay,
   speed,
@@ -28,7 +25,7 @@ const Scroll = ({
   stopOnClick = false,
 }) => {
   let sBox = document.querySelector('.isiScroll')
-  if (!sBox) return setTimeout(Scroll, 100, { event, on, slider, color, track, curve, arrow, delay, speed })
+  if (!sBox) return setTimeout(Scroll, 100, { event, on, slider, arrow, delay, speed })
 
   const html = sBox.innerHTML
   sBox.innerHTML = ''
@@ -39,9 +36,6 @@ const Scroll = ({
   sEl.id = 'html'
   sEl.innerHTML = html
 
-  sBar.style.background = track
-  sTab.style.background = color
-  sBar.style.borderRadius = sTab.style.borderRadius = curve
   let sRatio = sBar.clientHeight / sEl.scrollHeight
   scroll = {
     bar: _ => {
