@@ -127,7 +127,8 @@ body[class='320x50'] br[class]:not([class='320x50']) {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-#html::-webkit-scrollbar {
+#html::-webkit-scrollbar,
+.isiScroll::-webkit-scrollbar {
   display: none;
 }
 .isiScroll {
