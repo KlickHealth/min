@@ -3,16 +3,18 @@ function load() { animate() }
 
 const when = (el, e, cb, one) => el && e.split(' ').forEach(e => el.addEventListener(e, cb, one && { once: true })) || el
 
-when(window, 'load', _ => Promise.all([
-  ...document.querySelectorAll('img[data-src]')
-].map(img => new Promise((res, rej) => {
-  img.onload = res
-  img.src = img.dataset.src
-}))).then(load))
-
-when(isi, 'transitionEnd mozTransitionEnd webkitTransitionEnd', scroll.bar)
-document.querySelector('.isiToggle')?.addEventListener('click', _ => 
-  document.querySelector('.banner')?.classList.toggle('active'))
+when(window, 'load', _ => {
+  Promise.all([
+    ...document.querySelectorAll('img[data-src]')
+  ].map(img => new Promise((res, rej) => {
+    img.onload = res
+    img.src = img.dataset.src
+  }))).then(load)
+  
+  when(isi, 'transitionEnd mozTransitionEnd webkitTransitionEnd', scroll.bar)
+  when(document.querySelector('.isiToggle'), 'click', _ =>
+    document.querySelector('.banner')?.classList.toggle('active'))
+})
 
 const Scroll = ({
   event = 'animationEnd webkitAnimationEnd mozAnimationEnd',
