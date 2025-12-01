@@ -6,7 +6,7 @@ when(window, 'load', _ => {
   ].map(img => new Promise((res, rej) => {
     img.onload = res
     img.src = img.dataset.src
-  }))).then(window.load || window.animate || _ => _)
+  }))).then(window.load || window.animate || (_ => _))
   
   when(document.querySelector('.isiToggle'), 'click', _ =>
     document.querySelector('.banner')?.classList.toggle('active'))
